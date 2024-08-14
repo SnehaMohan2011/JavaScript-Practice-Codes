@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>TASK31-35</title>
+</head>
+<body>
+    <h1><center>Hey User,Welcome</center></h1>
+    <script>
+        //task 31
+       let a=10;
+       let b=20;
+       if(a>b){
+        document.write("A is Greater");
+       }
+       else{
+        document.write("B is Greater"+"<br>");
+       }
+
+       //task 32
+       let num = 5;
+       let str = "5";
+       document.write(num == str); 
+
+       //task 33
+       let str1 = "apple";
+let str2 = "banana";
+            
+console.log(str1 < str2);  
+console.log(str1 > str2); 
+console.log(str1 <= str2); 
+console.log(str1 >= str2); 
+
+let str3 = "apple";
+let str4 = "banana";
+
+console.log(str1 < str2);  //true
+console.log(str1 > str2);  //false
+console.log(str1 === str2); //false
+  
+
+//task 34
+function NotEq(value1, value2) {
+    return value1 != value2;
+}
+console.log(NotEq(5, "5"));//false
+
+function StrictlyNotEq(value1, value2) {
+    return value1 !== value2;
+}
+
+console.log(StrictlyNotEq(5, "5"));//true
+console.log(StrictlyNotEq(10, 20));//true
+
+//task35
+function equality(value1, value2) {
+    return value1 == value2;
+}
+
+function strictequality(value1, value2) {
+    return value1 === value2;
+}
+console.log(equality(null, undefined)); // true
+console.log(strictequality(null, undefined)); // false
+
+    </script>
+</body>

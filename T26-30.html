@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>TASK1</title>
+</head>
+<body>
+    <h1><center>Hey User,Welcome</center></h1>
+    <script>
+        //task26
+       let string="123";
+       let number=string*5;
+       document.write(string+"<br>");
+       document.write(number+"<br>");
+
+      //task 27
+      let a1=true;
+      let num= a1+"";
+      document.write(num +"<br>");
+      document.write(typeof num +"<br>");
+
+      //task 28
+       function Add(a,b){
+        return a+b;
+       }
+       function Sub(a,b){
+        return a-b;
+       }
+       function mul(a,b){
+        return a*b;
+       }
+       function div(a,b){
+        if(b==0){
+            document.write("cannot be divided by 0");
+        }
+        return a/b;
+       }
+       function mod(a,b){
+        if(b==0){
+            document.write("cannot be divided by 0");
+        }
+        return a%b;
+       }
+       document.write(Add(10,20)+"<br>");
+       document.write(Sub(99,20)+"<br>");
+       document.write(mul(10,200)+"<br>");
+       document.write(div(10,20)+"<br>");
+       document.write(mod(10,10)+"<br>");
+
+       //task 29
+       document.write("Increment"+"<br>");
+       function inc(value){
+        document.write(value++ +"<br>");
+        document.write(value++ +"<br>");
+        document.write(++value +"<br>");
+        let a=20;
+        document.write(++a +"<br>");
+       }
+       inc(10);
+       document.write("Decrement"+"<br>");
+       function dec(value){
+        document.write(value-- +"<br>");
+        document.write(value-- +"<br>");
+        document.write(--value +"<br>");
+        let a=20;
+        document.write(--a +"<br>");
+       }
+       dec(10);
+
+       //task 30
+       function evaluateExpression(a, b, c, d) {
+   
+    return a + b * c ** d / (a - b);
+}
+
+let result1 = evaluateExpression(2, 3, 4, 2); 
+let result2 = evaluateExpression(5, 10, 2, 3); 
+let result3 = evaluateExpression(1, 2, 3, 4); 
+console.log(result1); //-34
+console.log(result2); //-75
+console.log(result3); //-161.5
+
+
+    </script>
+</body>
